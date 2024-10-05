@@ -1,0 +1,71 @@
+.Login {
+    color: white;
+    background-image: url("/back-2.jpg");
+    background-size: cover;
+    padding: 50px 0;    
+}
+.Login .container {
+    padding: 30px;
+}
+.box-1 {
+    background-color: #191919a1;
+    padding: 40px 40px;
+    border-radius: 10px;
+}
+
+.box-1 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #750E21;
+   
+}
+.box-1 p {
+    font-size: 20px;
+    color: #BED754;
+}
+.box-1 button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #BED754;
+    color: #191919;
+    font-size: 20px;
+    font-weight: bold;
+}
+form {
+    margin: 30px 0;
+}
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+form input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background-color: #bfd754a0;
+}
+form input::placeholder {
+    color: #191919;
+}
+form .info p {
+    cursor: pointer;
+}
+
+
+@media (max-width: 990px) {
+    .box-1 {
+        width: 100%;
+    }
+    .box-1 h1 {
+        font-size: 30px;
+    }
+    form .info p{
+        font-size: 12px;
+    }
+    form .info label{
+        font-size: 12px;
+    }
+}

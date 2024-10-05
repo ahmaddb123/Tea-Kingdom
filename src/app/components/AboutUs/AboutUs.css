@@ -1,0 +1,59 @@
+.AboutUs {
+    color: black;
+    background-image: url("/background-2.jpg");
+    padding: 100px 0;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.title h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #BED754;
+    background-color: #750E21;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #bfd754d3;
+    padding: 20px;
+}
+.image-ahmad {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.info ul {
+    list-style: disc;
+}
+.info ul li {
+    color: black;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.info ul li:hover {
+    color: #750E21;
+}
+.info ul li::marker {
+    color: #750E21;
+  }
+  @media (max-width: 1280px) {
+    .content {
+        flex-direction: column;
+        padding: 40px 0;
+        padding: 40px;
+    }
+    .info ul li:hover {
+        color: #750E21;
+    }
+  }

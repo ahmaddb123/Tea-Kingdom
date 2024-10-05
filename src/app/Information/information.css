@@ -1,0 +1,70 @@
+.information {
+    color: white;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.information::before {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    background-color: #BED754;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 3s ease-in-out infinite alternate;
+}
+@keyframes waving {
+    from {
+      transform: translateX(-50%) skew(0, -10deg);
+    }
+    to {
+      transform: translateX(-30%) skew(10deg, 0);
+    }
+  }
+.info {
+    margin: 20px 0;
+    line-height: 1.7;
+}
+.info h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.info ol {
+    list-style-type: decimal;
+    margin: 0 30px 30px ;
+}
+.info ol li {
+    font-size: 25px;
+    margin: 5px 0 5px 50px
+}
+.image {
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: 0.5s;
+}
+.image:hover {
+    border-color: #BED754;
+    transform: translate(10px , -10px);
+} 
+@media (max-width: 767px) {
+    .info ol li {
+        margin: 5px 0;
+    }
+    .info h1 {
+        font-size: 28px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .info ol {
+        margin: 30px 0;
+    }
+    .info ol li {
+        font-size: 20px;
+    }
+} 

@@ -1,0 +1,48 @@
+.moving-title {
+  font-size: 80px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* العنصر في موضعه الأساسي */
+  }
+  50% {
+    transform: translateY(-40px); /* يتحرك للأعلى */
+  }
+  100% {
+    transform: translateY(0); /* يعود إلى موضعه الأساسي */
+  }
+}
+.home {
+  background-image: url("/background.webp");
+  background-size: cover;
+  background-position: 10px;
+  height: calc(100vh + 253px - 171px);
+  display: flex;
+  align-items: center;
+}
+.container-title {
+  color: #750e21;
+  text-align: center;
+}
+.desc {
+  margin-top: 50px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.7;
+  background-color: #19191963;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 1100px) {
+  .moving-title {
+    font-size: 50px;
+  }
+  .desc {
+    font-size: 20px;
+  }
+}
+

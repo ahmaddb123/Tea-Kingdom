@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Romanesco&display=swap');
+
+.Testimonials {
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+.Testimonials::before {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 3s ease-in-out infinite alternate;
+}
+.title-t {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: #750e21;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #bed754;
+}
+.cards {
+  height: 500px;
+  width: 380px;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #191919;
+}
+.cards::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-color: #bed754;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  animation: waving 3s ease-in-out infinite alternate;
+}
+@keyframes waving {
+  from {
+    transform: translateX(-50%) skew(0, -10deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0);
+  }
+}
+.icon {
+  font-size: 40px;
+  text-align: right;
+  color: #bed754;
+  margin-bottom: 20px;
+}
+.cards p {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 20px;
+  color: #191919;
+  font-family: "EB Garamond", serif;  
+  font-style: italic;
+}
+.cards h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #750e21;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+.cards .person {
+  position: absolute;
+  bottom: 40px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: center;
+}
