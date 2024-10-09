@@ -13,7 +13,7 @@ export default function Home() {
           {/* CONTAINER DESCRIPTION */}
           <div className="desc">
             <h1>Tea: A Drink of Tradition and Serenity</h1>
-            <p className="">
+            <p className="p-desc">
               Tea is not just a beverage; its an experience that blends
               heritage and tranquility. Throughout the ages, tea has held a
               special place in many cultures, symbolizing hospitality,

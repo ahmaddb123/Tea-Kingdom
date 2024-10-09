@@ -5,7 +5,7 @@ import Product from "../components/Product";
 function TeaProduct() {
   return (
     <div className="product ">
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <Product/>
       </div>
     </div>
