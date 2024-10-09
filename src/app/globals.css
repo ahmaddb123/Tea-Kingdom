@@ -15,3 +15,18 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  transition: 0.5s;
+}
+::-webkit-scrollbar-track {
+  background: #750e21;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bed754;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #750e21;
+}
